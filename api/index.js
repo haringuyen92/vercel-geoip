@@ -7,6 +7,7 @@ export default function (request) {
 		JSON.stringify({
 			...geo,
 			ip: ipAddress(request) || null,
+			test: "hello"
 		}),
 		{
 			headers: { "content-type": "application/json" },
