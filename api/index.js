@@ -6,6 +6,7 @@ export const config = {
 
 export default function (request) {
 	const geo = geolocation(request);
+	console.log("start hheeh");
 	return new Response(
 		JSON.stringify({
 			...geo,
