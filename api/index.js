@@ -1,5 +1,9 @@
 import { geolocation, ipAddress } from "@vercel/edge";
 
+export const config = {
+	runtime: "edge",
+};
+
 export default function (request) {
 	const geo = geolocation(request);
 	console.log("start geolocation");
