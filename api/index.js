@@ -2,7 +2,7 @@ import { geolocation, ipAddress } from "@vercel/edge";
 
 export default function (request) {
 	const geo = geolocation(request);
-	console.log("start geolocation", request);
+	console.log("start geolocation");
 	return new Response(
 		JSON.stringify({
 			...geo,
